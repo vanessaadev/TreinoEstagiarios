@@ -100,3 +100,22 @@ p {
         transform: rotate(360deg);
     }
 }
+
+.scroll-on-hover {
+    white-space: nowrap; /* Evita que o conteúdo quebre em várias linhas */
+    padding: 10px;
+  }
+  
+  .scroll-on-hover:hover {
+    animation: scrollHorizontally 1s running 1;
+  }
+  
+  @keyframes scrollHorizontally {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(10%);
+    }
+  }
+
